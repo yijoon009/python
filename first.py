@@ -1,5 +1,7 @@
-n=5
-while n > 0:
-    print(n)
-    n = n-1
-print('blastoff!')
+x=10
+while x> 5:
+    print(x)
+    x=x-1
+
+if x<5:
+    print()
