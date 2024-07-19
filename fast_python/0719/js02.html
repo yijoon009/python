@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script>
+            // alert("ok!");
+            function goClick() {
+                const jsonstring =
+                    '{"name" :"yijun","age" :40, "phone" : "010-1111-1111"}';
+                const jsonObject = JSON.parse(jsonstring);
+                // console.log(jsonObject.name);
+                // console.log(jsonObject.age);
+                // console.log(jsonObject.phone);
+                const jo = {
+                    name: "yijun",
+                    age: 10,
+                    phone: "1010-111-1-1",
+                };
+                const js = JSON.stringify(jo);
+                // console.log(jo);
+                // console.log(js);
+                let html = '<table border="1">';
+                html += "<tr>";
+                html += "<td>NAME</td>";
+                html += "<td>AGE</td>";
+                html += "<td>PHONE</td>";
+                html += "</tr>";
+                html += "<tr>";
+                html += "<td>" + jsonObject.name + "</td>";
+                html += "<td>" + jsonObject.age + "</td>";
+                html += "<td>" + jsonObject.phone + "</td>";
+                html += "</tr>";
+                html += "</table>";
+                document.getElementById("msg").innerHTML = html;
+            }
+        </script>
+    </head>
+    <body>
+        <button onclick="goClick()">click</button>
+        <div id="msg">버튼을 클릭하면 여기에 이름을 출력하세여</div>
+    </body>
+</html>

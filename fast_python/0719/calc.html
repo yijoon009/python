@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: #f0f0f0;
+            }
+            .box {
+                width: 100px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+                border: 2px solid #000;
+                background-color: #fff;
+            }
+            .container {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            button {
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                background-color: #4caf50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+            button:hover {
+                background-color: #45a049;
+            }
+            #total {
+                font-size: 20px;
+                font-weight: bold;
+            }
+        </style>
+        <script>
+            function calculateSum() {
+                const num1 = parseInt(
+                    document.getElementById("num1").innerText
+                );
+                const num2 = parseInt(
+                    document.getElementById("num2").innerText
+                );
+
+                fetch("http://localhost:5555/calc", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ num1: num1, num2: num2 }),
+                })
+                    .then((response) => response.json())
+                    .then((data) => {
+                        document.getElementById("total").innerText =
+                            "총합 : " + data.sum;
+                    })
+                    .catch((error) => console.error("Error:", error));
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div id="num1" class="box">20</div>
+            <div id="num2" class="box">30</div>
+        </div>
+        <button onclick="calculateSum()">계산</button>
+        <div id="total">총합 :</div>
+    </body>
+</html>

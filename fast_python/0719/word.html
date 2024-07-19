@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Text Analysis</title>
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="mt-5">Text Analysis</h1>
+            <form id="textForm" class="my-4">
+                <div class="form-group">
+                    <textarea
+                        id="textInput"
+                        class="form-control"
+                        rows="5"
+                        placeholder="Enter your text here"
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Analyze</button>
+            </form>
+            <h2>Word Frequency</h2>
+            <table id="wordTable" class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Word</th>
+                        <th>Frequency</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <!-- Bootstrap and jQuery scripts -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+            document
+                .getElementById("textForm")
+                .addEventListener("submit", async (event) => {
+                    event.preventDefault(); // 버튼의 고유한 기능을 막는 기능
+                    const textInput =
+                        document.getElementById("textInput").value;
+                    const response = await fetch(
+                        "http://127.0.0.1:5555/analyze_text",
+                        {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({ text: textInput }),
+                        }
+                    );
+
+                    if (!response.ok) {
+                        console.error("Network response was not ok");
+                        return;
+                    }
+
+                    const result = await response.json();
+                    const tableBody = document
+                        .getElementById("wordTable")
+                        .getElementsByTagName("tbody")[0];
+                    tableBody.innerHTML = ""; // Clear existing table data
+
+                    for (const [word, frequency] of Object.entries(
+                        result.word_frequency
+                    )) {
+                        const row = tableBody.insertRow();
+                        const cell1 = row.insertCell(0);
+                        const cell2 = row.insertCell(1);
+                        cell1.textContent = word;
+                        cell2.textContent = frequency;
+                    }
+                });
+        </script>
+    </body>
+</html>
