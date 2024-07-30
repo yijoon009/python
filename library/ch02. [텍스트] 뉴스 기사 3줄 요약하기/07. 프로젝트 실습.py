@@ -1,12 +1,11 @@
 import base64
-from gensim.summarization.summarizer import summarize
-from gensim.summarization.textcleaner import split_sentences
 import collections
-import textwrap
-import re
-import webbrowser
 import os
+import re
+import textwrap
+import webbrowser
 
+from gensim.summarization.summarizer import summarize
 
 if __name__ == "__main__":
     # 기사 이미지
