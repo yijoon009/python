@@ -6,7 +6,7 @@ import requests
 
 
 def main():
-    api_key = ""
+    api_key = "b8296554c33187ee32c819067c51fc37"
     city = input('which city? ')
 
 

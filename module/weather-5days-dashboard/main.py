@@ -6,7 +6,7 @@ import requests
 
 
 def main():
-    api_key = ""
+    api_key = "b8296554c33187ee32c819067c51fc37"
     city = input('which city? ')
 
     # fetcher는 api key와 city를 입력받아서 dict(원본) 넘기기
