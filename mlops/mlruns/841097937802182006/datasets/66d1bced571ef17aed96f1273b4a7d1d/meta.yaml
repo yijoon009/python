@@ -1,0 +1,8 @@
+digest: 2b35a197
+name: dataset
+profile: '{"features_shape": [30, 4], "features_size": 120, "features_nbytes": 960}'
+schema: '{"mlflow_tensorspec": {"features": "[{\"type\": \"tensor\", \"tensor-spec\":
+  {\"dtype\": \"float64\", \"shape\": [-1, 4]}}]", "targets": null}}'
+source: '{"tags": {"mlflow.user": "yijun", "mlflow.source.name": "/Users/yijun/study/workspace/python/tmp_python/mlops/.venv/lib/python3.10/site-packages/ipykernel_launcher.py",
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "7a812cfc98b69b6a6658ea8a00cbe099023fc2c9"}}'
+source_type: code

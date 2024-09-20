@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/6b36de56cd8a441fbc9951f372971230/artifacts
+end_time: 1726809176049
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: 6b36de56cd8a441fbc9951f372971230
+run_name: glamorous-koi-936
+run_uuid: 6b36de56cd8a441fbc9951f372971230
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809172732
+status: 3
+tags: []
+user_id: yijun

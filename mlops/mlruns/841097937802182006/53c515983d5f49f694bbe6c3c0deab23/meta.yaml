@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/53c515983d5f49f694bbe6c3c0deab23/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: 53c515983d5f49f694bbe6c3c0deab23
+run_name: resilient-kite-108
+run_uuid: 53c515983d5f49f694bbe6c3c0deab23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809399403
+status: 1
+tags: []
+user_id: yijun

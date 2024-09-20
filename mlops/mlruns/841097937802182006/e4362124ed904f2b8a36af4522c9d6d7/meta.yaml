@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/e4362124ed904f2b8a36af4522c9d6d7/artifacts
+end_time: 1726809179066
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: e4362124ed904f2b8a36af4522c9d6d7
+run_name: magnificent-gull-45
+run_uuid: e4362124ed904f2b8a36af4522c9d6d7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809176115
+status: 3
+tags: []
+user_id: yijun

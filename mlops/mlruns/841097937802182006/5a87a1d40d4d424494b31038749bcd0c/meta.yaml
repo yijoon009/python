@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/5a87a1d40d4d424494b31038749bcd0c/artifacts
+end_time: 1726809172697
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: 5a87a1d40d4d424494b31038749bcd0c
+run_name: delicate-lark-763
+run_uuid: 5a87a1d40d4d424494b31038749bcd0c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809169736
+status: 3
+tags: []
+user_id: yijun

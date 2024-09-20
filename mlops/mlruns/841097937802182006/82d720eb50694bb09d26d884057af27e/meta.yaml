@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/82d720eb50694bb09d26d884057af27e/artifacts
+end_time: 1726809399372
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: 82d720eb50694bb09d26d884057af27e
+run_name: ambitious-snipe-84
+run_uuid: 82d720eb50694bb09d26d884057af27e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809396026
+status: 3
+tags: []
+user_id: yijun

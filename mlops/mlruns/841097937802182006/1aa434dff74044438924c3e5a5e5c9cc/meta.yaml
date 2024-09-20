@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/1aa434dff74044438924c3e5a5e5c9cc/artifacts
+end_time: 1726809105858
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: 1aa434dff74044438924c3e5a5e5c9cc
+run_name: languid-ox-845
+run_uuid: 1aa434dff74044438924c3e5a5e5c9cc
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809102655
+status: 3
+tags: []
+user_id: yijun

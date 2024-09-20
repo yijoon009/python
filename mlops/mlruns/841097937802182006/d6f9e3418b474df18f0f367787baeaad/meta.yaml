@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/d6f9e3418b474df18f0f367787baeaad/artifacts
+end_time: 1726809796752
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: d6f9e3418b474df18f0f367787baeaad
+run_name: 2024-23-09/20/24 - LogisticRegression
+run_uuid: d6f9e3418b474df18f0f367787baeaad
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809793768
+status: 3
+tags: []
+user_id: yijun

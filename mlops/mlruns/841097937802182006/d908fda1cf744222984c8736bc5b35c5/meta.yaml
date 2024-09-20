@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/d908fda1cf744222984c8736bc5b35c5/artifacts
+end_time: 1726809163468
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: d908fda1cf744222984c8736bc5b35c5
+run_name: masked-whale-350
+run_uuid: d908fda1cf744222984c8736bc5b35c5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809160450
+status: 3
+tags: []
+user_id: yijun

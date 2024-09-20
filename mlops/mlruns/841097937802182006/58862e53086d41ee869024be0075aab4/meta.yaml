@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/841097937802182006/58862e53086d41ee869024be0075aab4/artifacts
+end_time: 1726809102636
+entry_point_name: ''
+experiment_id: '841097937802182006'
+lifecycle_stage: active
+run_id: 58862e53086d41ee869024be0075aab4
+run_name: entertaining-auk-981
+run_uuid: 58862e53086d41ee869024be0075aab4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726809099351
+status: 3
+tags: []
+user_id: yijun
