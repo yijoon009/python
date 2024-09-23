@@ -1,0 +1,17 @@
+# docker-compose: 2개 이상의 image를 컨트롤 할 수 있도록 도와주는 파일
+
+services:
+    app: # FastAPI/ 컨테이너 1
+        build:
+            context: .
+        ports:
+            - ":5000"
+
+    nginx: # 컨테이너 2
+        build:
+            context: . # 같은 경로에 위치하고 있다.
+            dockerfile: Dockerfile.nginx
+        depends_on:
+            - app
+        ports:
+            - "80:80"
